@@ -4,7 +4,7 @@ import { ClimbingBoxLoader } from "react-spinners";
 import ChartContainer from "../components/ChartContainer";
 
 export const getStaticProps = async () => {
-  const res = await fetch("http://andersonc137.pythonanywhere.com/");
+  const res = await fetch(process.env.API_URI);
   const data = await res.json();
   return {
     props: {

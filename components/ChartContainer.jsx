@@ -9,7 +9,7 @@ const ChartContainer = ({ data }) => {
 
   useEffect(() => {
     setLoading(false);
-  }, [])
+  }, []);
 
   useEffect(() => {
     // get timestamp
@@ -44,10 +44,10 @@ const ChartContainer = ({ data }) => {
         seriesThreshold: 5,
       },
       title: {
-        text: "this is my title",
+        text: "Wind Turbine Data",
       },
       subtitle: {
-        text: "this is my subtitle",
+        text: "Power generated using wind turbines.",
       },
       xAxis: [
         {
@@ -74,7 +74,7 @@ const ChartContainer = ({ data }) => {
         {
           // Secondary yAxis
           title: {
-            text: "Power",
+            text: "Power Output",
             style: {
               color: "blue",
             },
@@ -96,7 +96,7 @@ const ChartContainer = ({ data }) => {
         align: "left",
         x: 120,
         verticalAlign: "top",
-        y: 20,
+        y: 0,
         floating: true,
         backgroundColor:
           Highcharts.defaultOptions.legend.backgroundColor || // theme
@@ -137,7 +137,6 @@ const ChartContainer = ({ data }) => {
       <Script src="https://code.highcharts.com/modules/export-data.js" />
       <Script src="https://code.highcharts.com/modules/accessibility.js" />
 
-      
       <div ref={chartRef} className={styles.chart}></div>
     </div>
   );
