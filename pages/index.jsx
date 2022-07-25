@@ -10,7 +10,7 @@ export default function Home() {
     if (formRef) {
       let password = formRef.current.querySelector("#password");
       let errorMsg = formRef.current.querySelector("#err");
-      if (password.value !== process.env.PASSWD) {
+      if (password.value !== process.env.ACCESS_CODE) {
         e.preventDefault();
         errorMsg.classList.remove(`${styles.noshow}`);
       }
@@ -40,14 +40,14 @@ export default function Home() {
           className={styles.input}
           type="password"
           id="password"
-          placeholder="Enter Password"
+          placeholder="Access Code"
           required
         />
         <span id="err" className={`${styles.noshow} ${styles.err}`}>
-          <small>wrong password</small>
+          <small>wrong code</small>
         </span>
         <button className={styles.btn} type="submit">
-          Log In
+          Enter
         </button>
       </form>
     </div>
