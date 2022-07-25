@@ -1,0 +1,10 @@
+.dashboard {
+  /* border: solid 2px red; */
+  background-color: #141418;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}

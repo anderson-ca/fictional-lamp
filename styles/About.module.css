@@ -1,0 +1,29 @@
+.about {
+    /* background-color: #23232E; */
+    width: 100vw;
+    height: 100vh;
+    padding: 20vh 20vw;
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.hero {
+    padding: 1.4rem;
+    height: 100vh;
+    color: #141418;
+}
+
+.title {
+    font-family: var(--secondary-font-family);
+    font-size: 4.2rem;
+    letter-spacing: 0.2rem;
+    padding-bottom: 1.5rem;
+}
+
+.paragraph {
+    font-size: clamp(0.8rem, 1.8vw, 1.2rem);
+    letter-spacing: 0.2rem;
+    line-height: 1.8rem;
+}

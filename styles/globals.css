@@ -1,26 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@1,100;1,200;1,400&display=swap");
+
+/**
+* ----------------------------------------
+* global styles
+* ----------------------------------------
+*/
+:root {
+  --primary-font-family: "Montserrat", sans-serif;
+  --secondary-font-family: "Anton", sans-serif;
+  --bg-primary-color: #cfcece;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html,
 body {
-  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--bg-primary-color);
+  font-family: var(--primary-font-family);
+}
+
+html {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 a {
-  color: inherit;
+  color: #cfcece;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+/**
+* ----------------------------------------
+* animation fade-in
+* ----------------------------------------
+*/
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.fade-in {
+  -webkit-animation: fadeIn 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fadeIn 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.spinner {
+  /* background-color: var(--bg-primary-color); */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
