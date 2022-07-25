@@ -15,10 +15,9 @@ export const getStaticProps = async () => {
 };
 
 const Dashboard = ({ data }) => {
-
   return (
     <div className={styles.dashboard}>
-    {/* <ClimbingBoxLoader color={"#FF4C7A"} loading={true} size={"100%"} /> */}
+      {/* <ClimbingBoxLoader color={"#FF4C7A"} loading={true} size={"100%"} /> */}
       <ChartContainer data={data} />
     </div>
   );
