@@ -7,16 +7,14 @@ const About = () => {
       <div className={styles.hero}>
         <h2 className={styles.title}>Data Visualization!</h2>
         <div className={styles.paragraph}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
-          sapiente ducimus corporis magnam? Modi natus praesentium perspiciatis
-          sed ex aperiam placeat, dolores quasi cumque ducimus ab culpa
-          consectetur porro voluptatum.
+          Wind Turbines with higher power ratings are desired to reduce
+          construction cost and maintenance time and increase energy yields.
           <br />
           <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-          debitis laboriosam. Magni, assumenda ab rem atque aspernatur dolores
-          tempora magnam vitae alias et aut exercitationem dolore qui est cum
-          perferendis!
+          Wind resource estimation is important to determine the feasibility of
+          a wind turbine/ wind farm. The most accurate method for finding out
+          the power that will be generated is by using the recorded data on site
+          on hourly basis for a period of a year.
         </div>
       </div>
     </div>
