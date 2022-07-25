@@ -5,7 +5,6 @@ import ChartContainer from "../components/ChartContainer";
 
 export const getStaticProps = async () => {
   const res = await fetch("http://andersonc137.pythonanywhere.com/");
-  console.log(process.env.API_URI);
   const data = await res.json();
   return {
     props: {
