@@ -6,18 +6,16 @@ export default function Home() {
   const formRef = useRef(null);
 
   const validateFunc = (e) => {
- 
+
     if (formRef) {
       let password = formRef.current.querySelector("#password");
       let errorMsg = formRef.current.querySelector("#err");
-      if (password.value !== process.env.ACCESS_CODE) {
+      if (password.value !== process.env.PASSWD) {
         e.preventDefault();
         errorMsg.classList.remove(`${styles.noshow}`);
       }
     }
   };
-
-  
 
   return (
     <div className={styles.container}>
