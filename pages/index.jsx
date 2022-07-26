@@ -10,7 +10,7 @@ export default function Home() {
     if (formRef) {
       let password = formRef.current.querySelector("#password");
       let errorMsg = formRef.current.querySelector("#err");
-      if (password.value !== "spark") {
+      if (password.value !== process.env.PASSWD) {
         e.preventDefault();
         errorMsg.classList.remove(`${styles.noshow}`);
       }
