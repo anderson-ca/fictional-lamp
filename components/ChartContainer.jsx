@@ -14,10 +14,9 @@ const ChartContainer = ({ data }) => {
   useEffect(() => {
     // get timestamp
     let timestamp = data.data.map((dataPoint) => new Date(dataPoint.timestamp));
-    timestamp = timestamp.map(
-      (dataPoint) =>
-        `${dataPoint.getDate()}/${dataPoint.getMonth()}/${dataPoint.getFullYear()}`
-    );
+    timestamp = timestamp.map((dataPoint) => {
+      return `${dataPoint.getMonth() + 1}/${dataPoint.getFullYear()}`;
+    });
 
     // get wind speed
     const wind_speed = data.data.map(
